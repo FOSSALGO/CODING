@@ -1,0 +1,64 @@
+Program menampilkan segitiga bintang ( * ) sebanyak n baris. INPUT berupa bilangan bulat n, selanjutnya output berupa simbol start ( * ) sebanyak n baris yang disusun dalam formasi segitiga rata kiri. contoh test case pasangan INPUT-OUTPUT sebagai berikut: 
+
+TestCase-1
+---------------
+INPUT
+2
+OUTPUT
+*
+* *
+
+TestCase-2
+---------------
+INPUT
+5
+OUTPUT
+*
+* *
+* * *
+* * * *
+* * * * *
+
+TestCase-3
+---------------
+INPUT
+1
+OUTPUT
+* 
+
+TestCase-4
+---------------
+INPUT
+17
+OUTPUT
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * * * * * * * * * 
+* * * * * * * * * * * * 
+* * * * * * * * * * * * * 
+* * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * 
+
+TestCase-5
+---------------
+INPUT
+8
+OUTPUT
+*
+* *
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
