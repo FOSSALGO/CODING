@@ -1,14 +1,15 @@
 # CC005: Program n Bintang
 Video Youtube: https://youtu.be/wRK2jwLIcyw
 
+<p>
 Program menampilkan n start ( * ) secara berurutan. INPUT berupa bilangan bulat n, selanjutnya output berupa simbol start ( * ) sebanyak n. contoh test case pasangan INPUT-OUTPUT sebagai berikut: 
 
-TestCase-1 <br/>
+TestCase-1
 ---------------
-INPUT<br/>
-2<br/>
-OUTPUT<br/>
-<br * *>
+INPUT
+2
+OUTPUT
+* *
 
 TestCase-2
 ---------------
@@ -37,3 +38,4 @@ INPUT
 8
 OUTPUT
 * * * * * * * * 
+</p>
