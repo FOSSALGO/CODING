@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Sugiarto Cokrowibowo"/>
+        <attribute name="authors" value="FOSALGO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-29 03:00:32 AM"/>
+        <attribute name="created" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAxLTI5OzAxOjM1OjM0IEFNOzI1MDQ="/>
+        <attribute name="edited" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAxLTI5OzAzOjAwOjMyIEFNOzE7MjYwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <assign variable="size" expression="5"/>
+            <declare name="dbUsername, dbPassword" type="String" array="True" size="size"/>
+            <assign variable="dbUsername[0]" expression="&quot;Alfonso&quot;"/>
+            <assign variable="dbUsername[1]" expression="&quot;Iwan&quot;"/>
+            <assign variable="dbUsername[2]" expression="&quot;Meo&quot;"/>
+            <assign variable="dbUsername[3]" expression="&quot;Herborist&quot;"/>
+            <assign variable="dbUsername[4]" expression="&quot;Acang Polo&quot;"/>
+            <assign variable="dbPassword[0]" expression="&quot;kandacong&quot;"/>
+            <assign variable="dbPassword[1]" expression="&quot;karokaro&quot;"/>
+            <assign variable="dbPassword[2]" expression="&quot;creamy&quot;"/>
+            <assign variable="dbPassword[3]" expression="&quot;naturalScen120&quot;"/>
+            <assign variable="dbPassword[4]" expression="&quot;awrftpq&quot;"/>
+            <declare name="berhasil" type="Boolean" array="False" size=""/>
+            <assign variable="berhasil" expression="false"/>
+            <while expression="berhasil == false">
+                <declare name="username, password" type="String" array="False" size=""/>
+                <input variable="username"/>
+                <input variable="password"/>
+                <comment text="cari apakah username ada di array dbUsername"/>
+                <declare name="index" type="Integer" array="False" size=""/>
+                <assign variable="index" expression="-1"/>
+                <declare name="i" type="Integer" array="False" size=""/>
+                <for variable="i" start="0" end="size-1" direction="inc" step="1">
+                    <if expression="username == dbUsername[i]">
+                        <then>
+                            <assign variable="index" expression="i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="index != -1">
+                    <then>
+                        <if expression="password == dbPassword[index]">
+                            <then>
+                                <output expression="&quot;Login Berhasil&quot;" newline="True"/>
+                                <assign variable="berhasil" expression="true"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Salah Password&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <comment text="index = -1"/>
+                        <output expression="&quot;Username Tidak Terdaftar&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
