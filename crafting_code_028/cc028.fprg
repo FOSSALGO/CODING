@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="VD1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 10:10:41 AM"/>
+        <attribute name="created" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAzLTE3OzA3OjQ0OjU4IEFNOzI1MTU="/>
+        <attribute name="edited" value="VkQxO0RFU0tUT1AtSzE0UVJDMjsyMDIxLTAzLTE3OzEwOjEwOjQxIEFNOzE7MjYwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="running" type="Boolean" array="False" size=""/>
+            <assign variable="running" expression="true"/>
+            <while expression="running == true">
+                <declare name="kata" type="String" array="False" size=""/>
+                <input variable="kata"/>
+                <output expression="&quot;Anda memasukkan kata: &quot;&amp;kata" newline="True"/>
+                <if expression="kata == &quot;END&quot;">
+                    <then>
+                        <output expression="&quot;Proses terhenti dan menepi&quot;" newline="True"/>
+                        <assign variable="running" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
