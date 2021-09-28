@@ -1,2 +1,2 @@
-# CC047: Cerak Verikal dengan Efek Bayangan di JavaFX
+# CC047: Gerak Verikal dengan Efek Bayangan di JavaFX
 https://youtu.be/mV921FMaosg
