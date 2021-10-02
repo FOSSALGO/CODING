@@ -1,4 +1,4 @@
-package ledakanpartikel;
+package fosalgo;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.RadialGradient;
