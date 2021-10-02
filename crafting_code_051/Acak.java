@@ -1,4 +1,4 @@
-package ledakanpartikel;
+package fosalgo;
 
 public class Acak {
     
